@@ -1,3 +1,3 @@
-module github.com/fns-server-manager
+module github.com/jeremoose/fns-server-manager
 
-go 1.14
+go 1.17

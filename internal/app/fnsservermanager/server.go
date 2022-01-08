@@ -18,7 +18,7 @@ type Server struct {
 	stdErr    *bytes.Buffer
 }
 
-func NewServer(name string, command string, arguments []string) (*Server, error) {
+func NewServer(name string, command string, arguments ...string) (*Server, error) {
 	if name == "" || command == "" {
 		return nil, errors.New("server name and/or command are not filled")
 	}
