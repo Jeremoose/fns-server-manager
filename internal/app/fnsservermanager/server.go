@@ -22,7 +22,7 @@ func NewServer(name string, command string, arguments ...string) (*Server, error
 	if name == "" || command == "" {
 		return nil, errors.New("server name and/or command are not filled")
 	}
-	return &Server{name: name, command: command, arguments: arguments}, nil
+	return &Server{name: name, command: command, arguments: arguments, stdOut: new(bytes.Buffer), stdErr: new(bytes.Buffer)}, nil
 }
 
 func (s *Server) Run() error {
