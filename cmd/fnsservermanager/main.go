@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/jeremoose/fns-server-manager/internal/app/fnsservermanager"
+	fnsservermanager "github.com/jeremoose/fns-server-manager/internal/app"
 )
 
 func main() {
